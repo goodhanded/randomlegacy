@@ -1,0 +1,32 @@
+.buffer-top {
+	margin-top: 20px;
+}
+
+.centered {
+	text-align: center;
+} 
+.right {
+	text-align: right;
+}
+a {
+	cursor: pointer;
+}
+
+body {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h2 > small {
+	position: relative;
+	bottom: 20px;
+}
+
+div.well h3 {
+	margin-top: 0px;
+}
+
+.summary-list {
+	list-style: none;
+	padding-left: 0px;
+}

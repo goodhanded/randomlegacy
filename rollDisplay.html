@@ -1,0 +1,153 @@
+<div ng-show="roll.hasRolled">
+
+	<table class="table table-hover">
+	
+		<thead>
+			<tr>
+				<th class="col-xs-1">&nbsp;</th>
+				<th class="col-xs-3">Attribute</th>
+				<th>Result</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td><button class="btn btn-sm btn-info" ng-click="roller.rollAttr('marital_status')">Re-Roll</button></td>
+				<td>Marital Status</td>
+				<td>
+					<a ng-click="setInfo(roll.maritalStatus)" data-toggle="modal" data-target="#legacyModal">
+						{{roll.maritalStatus.name}}
+					</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td><button class="btn btn-sm btn-info" ng-click="roller.rollAttr('children')">Re-Roll</button></td>
+				<td>Children</td>
+				<td>
+					<a ng-click="setInfo(roll.children)" data-toggle="modal" data-target="#legacyModal">
+						{{roll.children.name}}
+					</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td><button class="btn btn-sm btn-info" ng-click="roller.rollAttr('primary_career')">Re-Roll</button></td>
+				<td>Primary Career</td>
+				<td>
+					<span ng-hide="roll.primaryCareer.jobs.length > 1">
+						<a ng-click="setInfo(roll.primaryCareer.jobs[0])" data-toggle="modal" data-target="#legacyModal">
+							{{roll.primaryCareer.jobs[0].name}}
+						</a>
+					</span>
+					<span ng-show="roll.primaryCareer.jobs.length > 1">
+							<a ng-click="setInfo(roll.primaryCareer.careerType)" data-toggle="modal" data-target="#legacyModal">
+								{{roll.primaryCareer.careerType.name}}
+							</a>
+							<ul>
+								<li ng-repeat="job in roll.primaryCareer.jobs">
+									<a ng-click="setInfo(job)" data-toggle="modal" data-target="#legacyModal">
+										{{job.name}}
+									</a>
+								</li>
+							</ul>
+					</span>					
+				</td>		
+			</tr>
+
+			<tr ng-show="roll.maritalStatus.numSecondaryCareers > 0">
+				<td><button class="btn btn-sm btn-info" ng-click="roller.rollAttr('secondary_careers')">Re-Roll</button></td>
+				<td ng-show="roll.maritalStatus.numSecondaryCareers > 1">Secondary Careers</td>
+				<td ng-hide="roll.maritalStatus.numSecondaryCareers > 1">Secondary Career</td>
+				<td>
+					<span ng-hide="roll.maritalStatus.numSecondaryCareers > 1">
+							<span ng-show="roll.secondaryCareers[0].jobs.length == 1">
+								<a ng-click="setInfo(roll.secondaryCareers[0].jobs[0])" data-toggle="modal" data-target="#legacyModal">
+									{{roll.secondaryCareers[0].jobs[0].name}}
+								</a>
+							</span>
+
+							<span ng-hide="roll.secondaryCareers[0].jobs.length == 1">
+								<a ng-click="setInfo(roll.secondaryCareers[0].careerType)" data-toggle="modal" data-target="#legacyModal">
+									{{roll.secondaryCareers[0].careerType.name}}
+								</a>
+							</span>
+							<ul ng-hide="roll.secondaryCareers[0].jobs.length == 1">
+								<li ng-repeat="job in roll.secondaryCareers[0].jobs">
+									<a ng-click="setInfo(job)" data-toggle="modal" data-target="#legacyModal">
+										{{job.name}}
+									</a>
+								</li>
+							</ul>
+
+					</span>
+
+					<ol ng-show="roll.maritalStatus.numSecondaryCareers > 1">
+						<li ng-repeat="career in roll.secondaryCareers">
+							<span ng-show="career.jobs.length == 1">
+								<a ng-click="setInfo(career.jobs[0])" data-toggle="modal" data-target="#legacyModal">
+									{{career.jobs[0].name}}
+								</a>
+							</span>
+
+							<span ng-hide="career.jobs.length == 1">
+								<a ng-click="setInfo(career.careerType)" data-toggle="modal" data-target="#legacyModal">
+									{{career.careerType.name}}
+								</a>
+							</span>
+							<ul ng-hide="career.jobs.length == 1">
+								<li ng-repeat="job in career.jobs">
+									<a ng-click="setInfo(job)" data-toggle="modal" data-target="#legacyModal">
+										{{job.name}}
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ol>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td><button class="btn btn-sm btn-info" ng-click="roller.rollAttr('generational_goal')">Re-Roll</button></td>
+				<td>Generational Goal</td>
+				<td>
+					<a ng-click="setInfo(roll.generationalGoal)" data-toggle="modal" data-target="#legacyModal">
+						{{roll.generationalGoal.name}}
+					</a>
+				</td>
+			</tr>
+
+			<tr ng-show="roll.generationalGoal.name == 'Midlife Crisis'">
+				<td>
+					<button ng-show="roll.midlifeCrises.length < 1" class="btn btn-sm btn-warning" ng-click="roller.rollAttr('midlife_crises')">Roll</button>
+					<button ng-hide="roll.midlifeCrises.length < 1" class="btn btn-sm btn-info" ng-click="roller.rollAttr('midlife_crises')">Re-Roll</button>
+				</td>
+				<td>Midlife Crisis</td>
+				<td>
+					<span ng-show="roll.midlifeCrises.length < 1">Roll for crises when you're ready.</span>
+					<span ng-hide="roll.midlifeCrises.length < 1">
+						<ul>
+							<li ng-repeat="crisis in roll.midlifeCrises">
+								<a ng-click="setInfo(crisis)" data-toggle="modal" data-target="#legacyModal">
+									{{crisis.name}}
+								</a>							
+							</li>
+						</ul>
+					</span>
+				</td>
+			</tr>
+
+			<tr>
+				<td><button class="btn btn-sm btn-info" ng-click="roller.rollAttr('miscellaneous_fun')">Re-Roll</button></td>
+				<td>Miscellaneous Fun</td>
+				<td>
+					<a ng-click="setInfo(roll.miscellaneousFun)" data-toggle="modal" data-target="#legacyModal">
+						{{roll.miscellaneousFun.name}}
+					</a>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,108 @@
+
+<div class="well">
+	<div class="row">
+		<div class="col-xs-12">
+			<h3>Marital Statuses:</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="option in data.maritalStatuses">
+	  		<div class="checkbox" ng-class="{disabled: tooFew(data.maritalStatuses, 1) && option.on}">
+	    		<label>
+	      			<input type="checkbox" ng-model="option.on" ng-disabled="tooFew(data.maritalStatuses, 1) && option.on"> {{option.name}}
+	    		</label>
+	  		</div>
+		</div>
+	</div>	
+</div>
+
+<div class="well">
+	<div class="row">
+		<div class="col-xs-12">
+			<h3>Children:</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="option in data.children">
+	  		<div class="checkbox" ng-class="{disabled: tooFew(data.children, 1) && option.on}">
+	    		<label>
+	      			<input type="checkbox" ng-model="option.on" ng-disabled="tooFew(data.children, 1) && option.on"> {{option.name}}
+	    		</label>
+	  		</div>
+		</div>
+	</div>
+</div>
+
+<div class="well">
+	<div class="row">
+		<div class="col-xs-12">
+			<h3>Conventional Careers:</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="option in data.conventionalCareers">
+	  		<div class="checkbox" ng-class="{disabled: tooFew(data.conventionalCareers, 8) && option.on}">
+	    		<label>
+	      			<input type="checkbox" ng-model="option.on" ng-disabled="tooFew(data.conventionalCareers, 8) && option.on"> {{option.name}}
+	    		</label>
+	  		</div>
+		</div>
+	</div>	
+</div>
+
+<div class="well">
+	<div class="row">
+		<div class="col-xs-12">
+			<h3>Unconventional Careers:</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="option in data.unconventionalCareers">
+	  		<div class="checkbox" ng-class="{disabled: tooFew(data.unconventionalCareers, 8) && option.on}">
+	    		<label>
+	      			<input type="checkbox" ng-model="option.on" ng-disabled="tooFew(data.unconventionalCareers, 8) && option.on"> {{option.name}}
+	    		</label>
+	  		</div>
+		</div>
+	</div>	
+</div>
+
+<div class="well">
+	<div class="row">
+		<div class="col-xs-12">
+			<h3>Generational Goals:</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="option in data.generationalGoals">
+	  		<div class="checkbox" ng-class="{disabled: tooFew(data.generationalGoals) && option.on}">
+	    		<label>
+	      			<input type="checkbox" ng-model="option.on" ng-disabled="tooFew(data.generationalGoals) && option.on"> {{option.name}}
+	    		</label>
+	  		</div>
+		</div>
+	</div>	
+</div>
+
+<div class="well">
+	<div class="row">
+		<div class="col-xs-12">
+			<h3>Miscellaneous Fun:</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-4 col-md-3" ng-repeat="option in data.miscellaneousFun">
+	  		<div class="checkbox" ng-class="{disabled: tooFew(data.miscellaneousFun) && option.on}">
+	    		<label>
+	      			<input type="checkbox" ng-model="option.on" ng-disabled="tooFew(data.miscellaneousFun) && option.on"> {{option.name}}
+	    		</label>
+	  		</div>
+		</div>
+	</div>	
+</div>

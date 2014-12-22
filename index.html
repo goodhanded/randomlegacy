@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+
+        <script src="app/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="app/bower_components/angular/angular.min.js"></script>
+        <script src="app/bower_components/angular-route/angular-route.min.js"></script>
+
+        <script src="app/app.js"></script>
+        <script src="app/config.js"></script>
+        <script src="app/dataSvc.js"></script>
+        <script src="app/HomeCtrl.js"></script>
+        <script src="app/oddsSvc.js"></script>
+        <script src="app/rollDisplayDirective.js"></script>
+        <script src="app/rollerSvc.js"></script>
+        <script src="app/rollSvc.js"></script>
+        <script src="app/routes.js"></script>
+        <script src="app/serializerSvc.js"></script>
+        <script src="app/utilSvc.js"></script>
+
+        <link rel="stylesheet" href="app/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Sims 4 Random Legacy Challenge Roller</title>
+    </head>
+    <body ng-app="app">
+        <div class="container">
+
+            <ng-view></ng-view>         
+
+        </div>
+    </body>
+</html>
