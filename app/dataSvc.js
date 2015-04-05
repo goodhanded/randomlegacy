@@ -184,6 +184,24 @@
                 on: true,
                 name: 'Athletic (Mr. or Ms. Solar System)',
                 description: 'No additional money-making opportunities.'
+            },
+            {
+                id: 21,
+                on: true,
+                name: 'Doctor (GTW)',
+                description: 'No additional money-making opportunities. This career counts as a profession.'
+            },
+            {
+                id: 22,
+                on: true,
+                name: 'Detective (GTW)',
+                description: 'No additional money-making opportunities. This career counts as a profession.'
+            },
+            {
+                id: 23,
+                on: true,
+                name: 'Scientist (GTW)',
+                description: 'No additional money-making opportunities. This career counts as a profession.'
             }
 		],
 
@@ -272,7 +290,13 @@
                 on: true,
                 name: 'Midlife Crisis',
                 description: 'This generation, one of the heir, spouses (including second chances) or helpers will experience a randomly-generated midlife crisis event. Between when this generation is rolled and when the first of the eligible sims reaches the adult lifestage (not YA), determine who will go through the crisis. If you have not picked someone before the first sim reaches adulthood, or is moved in as an adult, that sim will be the one. Once the selected sim reaches adulthood (and not sooner!), roll to determine three aspects to the midlife crisis. Each aspect has a deadline which it must either be completed or started during. The goal is complete when all aspects have been completed.'
-            }
+            },
+            {
+                id: 13,
+                on: true,
+                name: 'Memorial',
+                description: 'The heir, along with any spouses or helpers, must be memorialized this generation, by a sim with level 10 skill in the relevant crafting skill(painting, photography or writing). Memorials may consist of: a painted portrait, a photograph, a biography, or a book of life. Each memorial can be crafted by a different sim if you want, and they don\'t have to all be the same type, though they should all be displayed together.'
+            },
 		],
 
 		maritalStatuses: [
@@ -534,7 +558,13 @@
                         description: 'Once a week, your sim must purchase something beautiful and shiny from the decorations tab in buy mode. This should be something that exists only to look awesome, and should be displayed all together(or as trophy centerpieces in each room or something), not decor that "blends in" such as toilet paper rolls in the bathroom or a pan rack in the kitchen. If your sim is insane and decides to build a "bathroom shrine" in their living room, that\'s totally legit, but it should be done to add to the story, not just because you couldn\'t be bothered to find a better idea than buying misc decorations for your bathrooms to fulfill this fun.'
                     }
                 ]
-            }
+            },
+            {
+                id: 17,
+                on: true,
+                name: 'Vacationer',
+                description: 'At least one sim from the household must go on vacation at least once every sim week. If you don\'t have the OR game pack, then that sim can\'t go on an actual vacation, but must use at least one vacation day from work, and must have an outing of some sort to enjoy their day off. This doesn\'t have to be the same sim every week.'
+            },
 		],
 
 		unconventionalCareers: [
@@ -572,7 +602,7 @@
                 id: 6,
                 on: true,
                 name: 'Treasure Hunter',
-                description: 'Dig up those little weird rocky-looking things and sell what you find. You may also sell the little treasures (aka, unwanted upgrade parts) that you dig out of your household plumbing, electronics and appliances. Collecting and breeding frogs is also allowed.'
+                description: 'Dig up those little weird rocky-looking things and sell what you find. You may also sell the little treasures(aka, unwanted upgrade parts) that you dig out of your household plumbing, electronics and appliances. Collecting and breeding frogs is also allowed, as is collecting and selling insects (OR).'
             },
             {
                 id: 7,
@@ -615,6 +645,24 @@
                 on: true,
                 name: 'Professional Host/Hostess',
                 description: 'Host social gatherings of all kinds and sell the rewards you earn for money.'
+            },
+            {
+                id: 14,
+                on: true,
+                name: 'Remedy Brewer (OR)',
+                description: 'Brew herbal remedies and sell them for profit.'
+            },
+            {
+                id: 15,
+                on: true,
+                name: 'Freelance Photographer (GTW)',
+                description: 'Take and sell photographs.'
+            },
+            {
+                id: 16,
+                on: true,
+                name: 'Retail Owner (GTW)',
+                description: 'Manage a retail store that does not sell anything that\'s covered by any of the other options above. For example, you could have a store that sells food you\'ve cooked, but you could not sell raw produce at that store unless you had another sim in the household that rolled Gardener. This career counts as a profession.'
             }
 		]
 
