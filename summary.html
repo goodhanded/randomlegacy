@@ -1,59 +1,64 @@
-<ul class="summary-list">
-	<li>Marital Status: {{roll.maritalStatus.name}}</li>
-	<li>Children: {{roll.children.name}}</li>
-	<li ng-hide="roll.primaryCareer.jobs.length > 1">Primary Career: {{roll.primaryCareer.jobs[0].name}}</li>
-	<li ng-show="roll.primaryCareer.jobs.length > 1">
-		Primary Career: Career Hopper
-		<ul class="summary-list">
-			<li ng-repeat="job in roll.primaryCareer.jobs">&nbsp;&nbsp;&nbsp;&nbsp;- {{job.name}}</li>
-		</ul>
-	</li>
-	<li ng-hide="roll.maritalStatus.numSecondaryCareers > 1">
-		<span ng-show="roll.secondaryCareers[0].jobs.length == 1">
-			Secondary Career: {{roll.secondaryCareers[0].jobs[0].name}}
-		</span>
+<div class="well">
+	<ul class="summary-list">
+		<li>Marital Status: {{roll.maritalStatus.name}}</li>
+		<li>Children: {{roll.children.name}}</li>
+		<li ng-hide="roll.primaryCareer.jobs.length > 1">Primary Career: {{roll.primaryCareer.jobs[0].name}}</li>
+		<li ng-show="roll.primaryCareer.jobs.length > 1">
+			Primary Career: Career Hopper
+			<ul class="summary-list">
+				<li ng-repeat="job in roll.primaryCareer.jobs">&nbsp;&nbsp;&nbsp;&nbsp;- {{job.name}}</li>
+			</ul>
+		</li>
+		<li ng-hide="roll.maritalStatus.numSecondaryCareers > 1">
+			<span ng-show="roll.secondaryCareers[0].jobs.length == 1">
+				Secondary Career: {{roll.secondaryCareers[0].jobs[0].name}}
+			</span>
 
-		<span ng-hide="roll.secondaryCareers[0].jobs.length == 1">
-			Secondary Career: {{roll.secondaryCareers[0].careerType.name}}
-		</span>
+			<span ng-hide="roll.secondaryCareers[0].jobs.length == 1">
+				Secondary Career: {{roll.secondaryCareers[0].careerType.name}}
+			</span>
 
-		<ul class="summary-list" ng-hide="roll.secondaryCareers[0].jobs.length == 1">
-			<li ng-repeat="job in roll.secondaryCareers[0].jobs">
-				&nbsp;&nbsp;&nbsp;&nbsp;- {{job.name}}
-			</li>
-		</ul>
-	</li>
-	<li ng-show="roll.maritalStatus.numSecondaryCareers > 1">
-		Secondary Careers:
-		<ol class="summary-list" ng-show="roll.maritalStatus.numSecondaryCareers > 1">
-			<li ng-repeat="career in roll.secondaryCareers">
-				<span ng-show="career.jobs.length == 1">
-					&nbsp;&nbsp;&nbsp;&nbsp;- {{career.jobs[0].name}}
-				</span>
+			<ul class="summary-list" ng-hide="roll.secondaryCareers[0].jobs.length == 1">
+				<li ng-repeat="job in roll.secondaryCareers[0].jobs">
+					&nbsp;&nbsp;&nbsp;&nbsp;- {{job.name}}
+				</li>
+			</ul>
+		</li>
+		<li ng-show="roll.maritalStatus.numSecondaryCareers > 1">
+			Secondary Careers:
+			<ol class="summary-list" ng-show="roll.maritalStatus.numSecondaryCareers > 1">
+				<li ng-repeat="career in roll.secondaryCareers">
+					<span ng-show="career.jobs.length == 1">
+						&nbsp;&nbsp;&nbsp;&nbsp;- {{career.jobs[0].name}}
+					</span>
 
-				<span ng-hide="career.jobs.length == 1">
-					&nbsp;&nbsp;&nbsp;&nbsp;- {{career.careerType.name}}
-				</span>
-				<ul class="summary-list" ng-hide="career.jobs.length == 1">
-					<li ng-repeat="job in career.jobs">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- {{job.name}}
-					</li>
-				</ul>
-			</li>
-		</ol>
-	</li>
-	<li>
-		Generational Goal: {{roll.generationalGoal.name}}
-		<ul class="summary-list" ng-show="roll.midlifeCrises.length > 0">
-			<li ng-repeat="crisis in roll.midlifeCrises">&nbsp;&nbsp;&nbsp;&nbsp;- {{crisis.name}}</li>
-		</ul>
-	</li>
-	<li>
-		Miscellaneous Fun: {{roll.miscellaneousFun.name}}
-	</li>
-</ul>
+					<span ng-hide="career.jobs.length == 1">
+						&nbsp;&nbsp;&nbsp;&nbsp;- {{career.careerType.name}}
+					</span>
+					<ul class="summary-list" ng-hide="career.jobs.length == 1">
+						<li ng-repeat="job in career.jobs">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- {{job.name}}
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+		<li>
+			Generational Goal: {{roll.generationalGoal.name}}
+			<ul class="summary-list" ng-show="roll.midlifeCrises.length > 0">
+				<li ng-repeat="crisis in roll.midlifeCrises">&nbsp;&nbsp;&nbsp;&nbsp;- {{crisis.name}}</li>
+			</ul>
+		</li>
+		<li>
+			Miscellaneous Fun: {{roll.miscellaneousFun.name}}
+		</li>
+	</ul>
 
-<div>
+	<div class="buffer-top">
+		Roll Your Own: http://randomlegacy.com
+	</div>
+</div>
+<div class="buffer-top">
 	<span class="glyphicon glyphicon-save"></span>
 	Right-click and copy <a href="{{roll.permalink}}">this link</a> to return to these results.
 </div>

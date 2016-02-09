@@ -183,8 +183,7 @@
                 id: 20,
                 on: true,
                 name: 'Business (Investor)',
-                description: 'May invest in stocks.'
-            },
+                description: 'May invest in stocks.'            },
             {
                 id: 21,
                 on: true,
