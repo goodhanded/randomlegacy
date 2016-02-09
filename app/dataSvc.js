@@ -69,13 +69,13 @@
                 id: 1,
                 on: true,
                 name: 'Entertainer (Musician)',
-                description: 'May busk for tips, sell jingles, and license songs.'
+                description: 'No additional money-making opportunities.'
             },
             {
                 id: 2,
                 on: true,
                 name: 'Entertainer (Comedian)',
-                description: 'May perform comedy routines, publish comedy books(self-publishing), and perform comedy in space.'
+                description: 'May perform comedy in space.'
             },
             {
                 id: 3,
@@ -99,7 +99,7 @@
                 id: 6,
                 on: true,
                 name: 'Painter (Patron of the Arts)',
-                description: 'May sell crafted paintings.'
+                description: 'May sell crafted paintings and call agent to collect money.'
             },
             {
                 id: 7,
@@ -123,37 +123,37 @@
                 id: 10,
                 on: true,
                 name: 'Criminal (Oracle)',
-                description: 'May pickpocket sims. May hack and create viruses once the career branches.'
+                description: 'May pickpocket sims. May hack and create viruses.'
             },
             {
                 id: 11,
                 on: true,
                 name: 'Astronomer (Space Ranger)',
-                description: 'No additional money-making opportunities.'
+                description: 'May go on space missions with the rocket ship.'
             },
             {
                 id: 12,
                 on: true,
                 name: 'Astronomer (Smuggler)',
-                description: 'May hack once the career branches.'
+                description: 'May go on space missions with the rocket ship.'
             },
             {
                 id: 13,
                 on: true,
                 name: 'Culinary (Chef)',
-                description: 'May publish cookbooks(self-publishing).'
+                description: 'May publish cookbooks (self-publishing).'
             },
             {
                 id: 14,
                 on: true,
                 name: 'Culinary (Mixologist)',
-                description: 'No additional money-making opportunities.'
+                description: 'May publish bar guides (self-publishing).'
             },
             {
                 id: 15,
                 on: true,
                 name: 'Tech Guru (eSport Gamer) ',
-                description: 'May mod games, make apps, perform freelance programming jobs, compete in gaming tournaments and livestream.'
+                description: 'No additional money-making opportunities.'
             },
             {
                 id: 16,
@@ -164,27 +164,45 @@
             {
                 id: 17,
                 on: true,
-                name: 'Business (Angel Investor)',
+                name: 'Athlete (Bodybuilder)',
                 description: 'No additional money-making opportunities.'
             },
             {
                 id: 18,
                 on: true,
-                name: 'Business (Business Tycoon)',
+                name: 'Athlete (Pro Athlete)',
                 description: 'No additional money-making opportunities.'
             },
             {
                 id: 19,
                 on: true,
-                name: 'Athletic (Hall of Famer)',
+                name: 'Business (Management)',
                 description: 'No additional money-making opportunities.'
             },
             {
                 id: 20,
                 on: true,
-                name: 'Athletic (Mr. or Ms. Solar System)',
-                description: 'No additional money-making opportunities.'
-            }
+                name: 'Business (Investor)',
+                description: 'May invest in stocks.'
+            },
+            {
+                id: 21,
+                on: true,
+                name: '(GTW) Doctor',
+                description: 'No additional money-making opportunities. This career counts as a profession.'
+            },
+            {
+                id: 22,
+                on: true,
+                name: '(GTW) Detective',
+                description: 'No additional money-making opportunities. This career counts as a profession.'
+            },
+            {
+                id: 23,
+                on: true,
+                name: '(GTW) Scientist',
+                description: 'No additional money-making opportunities. This career counts as a profession.'
+            },
 		],
 
 		generationalGoals: [
@@ -272,6 +290,30 @@
                 on: true,
                 name: 'Midlife Crisis',
                 description: 'This generation, one of the heir, spouses (including second chances) or helpers will experience a randomly-generated midlife crisis event. Between when this generation is rolled and when the first of the eligible sims reaches the adult lifestage (not YA), determine who will go through the crisis. If you have not picked someone before the first sim reaches adulthood, or is moved in as an adult, that sim will be the one. Once the selected sim reaches adulthood (and not sooner!), roll to determine three aspects to the midlife crisis. Each aspect has a deadline which it must either be completed or started during. The goal is complete when all aspects have been completed.'
+            },
+            {
+                id: 13,
+                on: true,
+                name: 'Memorial',
+                description: 'The heir, along with any spouses or helpers, must be memorialized this generation, by a sim with maxed skill in the relevant crafting skill(painting, photography or writing). Memorials may consist of: a painted portrait, a photograph, a biography, or a book of life. Each memorial can be crafted by a different sim if you want, and they don\'t have to all be the same type, though they should all be displayed together.' 
+            },
+            {
+                id: 14,
+                on: true,
+                name: 'Themed Display',
+                description: 'This generation, the heir, spouses and helpers should create a themed display somewhere in their house or yard. The display must contain at least 10 items, plant and craft level excellent or higher, from at least two different collections or craft disciplines, and must contain at least one craft and one collected item. For example, a display with 3 plants, 5 photographs and 2 space rocks would be okay, but a display with 4 photographs and 6 paintings would not be, because there is no collected item. The theme is left up to you, examples include: space(telescope prints and photographs of the alien home world), botany(plants, photographs of plants, and microscope prints of plants), flowers(plants and paintings of plants in the wild) and animals(frogs, insects and photographs of insects in the wild).'
+            },
+            {
+                id: 15,
+                on: true,
+                name: 'Haunted House',
+                description: 'From the time the heir comes of age to the time the heir dies, three sims must die an unnatural death on your home lot. Unnatural death is defined as any death except by old age, and the sims may be members of your household(such as unneeded spouses, spares that are about to move out, or even the heir themselves) or guests. Furthermore, the graves must stay on your home lot, and the ghosts be allowed to roam the house freely. The graves may be removed after this generation\'s heir dies.'
+            },
+            {
+                id: 16,
+                on: true,
+                name: '(GT) Best Club Ever',
+                description: 'Your heir must start their own club from scratch this generation. To complete this goal, the following criteria must be met concurrently: 1) The club must have 8 members. Sims may not join the club unless they are already friends with the club leader, so get to recruiting! 2) The club must have a hangout built specially for them, either on your home lot or on a community lot. The hangout should contain enough seating for the entire club and any necessary items to complete club activities. If you build on a community lot from the map view, take note of how much money you "spent" on the hangout and subtract it from your family\'s funds. 3) The club should have all ranks of one of the emotional vibes purchased, depending on the club\'s focus. Happy counts. 4) The club door perk must be unlocked (since you have a hangout). 5) In addition, three other club spirit perks(hats, jackets, wall decorations, etc) must be unlocked and used.'
             }
 		],
 
@@ -475,7 +517,7 @@
                 id: 8,
                 on: true,
                 name: 'Fixer Upper',
-                description: 'May not purchase new objects if they break this generation. You must fix them. I don\'t care if you have no handiness skill, if you want to shower today you\'ll get to work, won\'t you?'
+                description: 'May not call the handyman or purchase new objects if they break this generation. You must fix them. I don\'t care if you have no handiness skill, if you want to shower today you\'ll get to work, won\'t you?'
             },
             {
                 id: 9,
@@ -499,7 +541,7 @@
                 id: 12,
                 on: true,
                 name: 'Health Nut',
-                description: 'This generation, sims may only eat healthy food. Healthy food includes: orange juice (quick meal), yogurt (quick meal), garden salad (cooking 1), (more?). In addition, the heir, spouse, helpers, and their children must each spend at least 3 hours each week performing physical activity, such as jogging, push-ups, or playing on the monkeybars.'
+                description: 'This generation, sims may only eat healthy food. Healthy food includes: orange juice (quick meal), yogurt (quick meal), garden salad (cooking 1), and wellness food. In addition, the heir, spouse, helpers, and their children must each spend at least 3 hours each week performing physical activity, such as jogging, swimming, yoga, or playing on the monkeybars.'
             },
             {
                 id: 13,
@@ -534,6 +576,30 @@
                         description: 'Once a week, your sim must purchase something beautiful and shiny from the decorations tab in buy mode. This should be something that exists only to look awesome, and should be displayed all together(or as trophy centerpieces in each room or something), not decor that "blends in" such as toilet paper rolls in the bathroom or a pan rack in the kitchen. If your sim is insane and decides to build a "bathroom shrine" in their living room, that\'s totally legit, but it should be done to add to the story, not just because you couldn\'t be bothered to find a better idea than buying misc decorations for your bathrooms to fulfill this fun.'
                     }
                 ]
+            },
+            {
+                id: 17,
+                on: true,
+                name: 'Vacationer',
+                description: 'At least one sim from the household must go on vacation at least once every sim week. If you don\'t have the OR game pack use the following alternate rule since that sim can\'t go on an actual vacation. They must use at least one vacation day from work, and must have a day outing of some sort, lasting for most of the day (you know the kind you\'d take in real life, leaving after breakfast and arriving back home in the evening), on their day off. This doesn\'t have to be the same sim every week.'
+            },
+            {
+                id: 18,
+                on: true,
+                name: '(GT) Clubber',
+                description: 'Starting from childhood or the time they join the household, the heir and every spouse/helper must belong to a club, attending a meeting at least once a week. They do not have to belong to the same club, though they can if you want. If you choose to use a household club, please keep in mind the rules about how to avoid making clubs cheaty(#19 under the Rules), specifically the ones prohibiting having a constant club gathering running at all times. They must actually get together in a group and do a thing in order to have a club gathering, you can\'t just run a gathering while they\'re all sleeping or doing random tasks around the house.'
+            },
+            {
+                id: 19,
+                on: true,
+                name: 'On Call',
+                description: 'Starting when the heir is a teen, they (or a spouse or helper) must respond to at least one "hang-out" phone call every week. This includes birthday parties and invitations to community lots, but does not include requests to come hang out at your home lot - you must actually leave your home lot for this to count.'
+            },
+            {
+                id: 20,
+                on: true,
+                name: 'Town Explorer',
+                description: 'Starting when the heir is a teen, they (or a spouse or helper) must visit a unique community lot every week, for at least 3 hours. The community lots may not be repeated to count for this, though you may visit them again just for fun.'
             }
 		],
 
@@ -572,7 +638,7 @@
                 id: 6,
                 on: true,
                 name: 'Treasure Hunter',
-                description: 'Dig up those little weird rocky-looking things and sell what you find. You may also sell the little treasures (aka, unwanted upgrade parts) that you dig out of your household plumbing, electronics and appliances. Collecting and breeding frogs is also allowed.'
+                description: 'Dig up those little weird rocky-looking things and sell what you find. You may also sell the little treasures (aka, unwanted upgrade parts) that you dig out of your household plumbing, electronics and appliances. Collecting and breeding frogs is also allowed, as is collecting and selling insects (OR).'
             },
             {
                 id: 7,
@@ -615,7 +681,31 @@
                 on: true,
                 name: 'Professional Host/Hostess',
                 description: 'Host social gatherings of all kinds and sell the rewards you earn for money.'
-            }
+            },
+            {
+                id: 14,
+                on: true,
+                name: '(OR) Remedy Brewer',
+                description: 'Brew herbal remedies and sell them for profit.'
+            },
+            {
+                id: 15,
+                on: true,
+                name: '(GTW) Freelance Photographer',
+                description: 'Take and sell photographs.'
+            },
+            {
+                id: 16,
+                on: true,
+                name: '(GTW) Retail Owner',
+                description: 'Manage a retail store that does not sell anything that\'s covered by any of the other options above. For example, you could have a store that sells food you\'ve cooked, but you could not sell raw produce at that store unless you had another sim in the household that rolled Gardener. This career counts as a profession.'
+            },
+            {
+                id: 17,
+                on: true,
+                name: '(GT) DJ',
+                description: 'Work as a DJ to earn tips, and license your mixtapes.'
+            },
 		]
 
 	});
