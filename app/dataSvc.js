@@ -202,6 +202,42 @@
                 name: '(GTW) Scientist',
                 description: 'No additional money-making opportunities. This career counts as a profession.'
             },
+            {
+                id: 24,
+                on: true,
+                name: '(CL) Critic (Art Critic)',
+                description: 'No additional money-making opportunities.'
+            },
+            {
+                id: 25,
+                on: true,
+                name: '(CL) Critic (Food Critic)',
+                description: ' If you have rolled Homemade, your food critic (and only your food critic) may eat out for food review purposes. No additional money-making opportunities.'
+            },
+            {
+                id: 26,
+                on: true,
+                name: '(CL) Politician (Charity Organizer)',
+                description: 'No additional money-making opportunities.'
+            },
+            {
+                id: 27,
+                on: true,
+                name: '(CL) Politician (Politician)',
+                description: 'May ask for bribes.'
+            },
+            {
+                id: 28,
+                on: true,
+                name: '(CL) Social Media (Internet Personality)',
+                description: 'May advertise on your social media page.'
+            },
+            {
+                id: 29,
+                on: true,
+                name: ' (CL) Social Media (Public Relations)',
+                description: 'No additional money-making opportunities.'
+            }
 		],
 
 		generationalGoals: [
@@ -729,6 +765,12 @@
                 on: true,
                 name: '(GT) DJ',
                 description: 'Work as a DJ to earn tips, and license your mixtapes.'
+            },
+            {
+                id: 18,
+                on: true,
+                name: '(DO) Restauranteur',
+                description: 'Manage your own restaurant. This career counts as a profession.'
             },
 		]
 
