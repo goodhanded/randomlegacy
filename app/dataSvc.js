@@ -257,7 +257,7 @@
                 id: 3,
                 on: true,
                 name: 'Perfect Children',
-                description: 'All children born this generation must complete their childhood aspiration and receive an B grade in elementary school and an A grade in high school. They should also have a BFF made during childhood, and at least one boyfriend or girlfriend lasting at least 24 sim hours during their teen years.'
+                description: 'All children born this generation must complete their childhood aspiration and receive an B grade in elementary school and an A grade in high school. They should also have a BFF made during childhood, and at least one boyfriend or girlfriend lasting at least 24 sim hours during their teen years. As toddlers, they must reach level 3 in all skills, including potty training, and raise at least one skill to level 5.'
             },
             {
                 id: 4,
@@ -269,7 +269,7 @@
                 id: 5,
                 on: true,
                 name: 'Expansionist',
-                description: 'You must construct a significant expansion to the house this generation.'
+                description: 'You must construct a significant expansion to the house this generation. You may also add or change a single lot trait, if you wish. If Random is your miscellaneous fun this generation, the trait changed and new trait must be randomly determined.'
             },
             {
                 id: 6,
@@ -294,13 +294,13 @@
                 id: 7,
                 on: true,
                 name: 'Deadbeat Parents',
-                description: 'The heir, spouse and helpers may not help their children this generation, apart from basic needs like food and interaction (autonomous chatting over dinner). This includes helping with homework, mentoring or encouraging children in skills, and reading books to them.'
+                description: 'The heir, spouse and helpers may not help their children this generation, apart from basic needs like food and interaction (autonomous chatting over dinner). This includes helping with homework, mentoring or encouraging children in skills, and reading books to them. For toddlers, it is permitted to provide basic care such as food and diaper changes, but try to avoid any parent-child interactions that raise a skill bar, such as flash cards, reading books, potty training, and so on. Some autonomous talking is okay - the parents are deadbeat, not abusive - but don\'t deliberately train the communication skill. Children may teach themselves.'
             },
             {
                 id: 8,
                 on: true,
                 name: 'Change of Scenery',
-                description: 'It\'s moving time! At some point after the heir comes of age, you must either move to a new lot, or completely demolish the entire house and start over from scratch on your current lot. Re-roll if it\'s generation 1.'
+                description: 'It\'s moving time! At some point after the heir comes of age, you must either move to a new lot, or completely demolish the entire house and start over from scratch on your current lot. If Random is your miscellaneous fun this generation, the new lot\'s traits must be randomly determined. Re-roll if it\'s generation 1.'
             },
             {
                 id: 9,
@@ -363,7 +363,7 @@
                 id: 1,
                 on: true,
                 name: 'Single',
-                description: 'Your heir may not have a live-in partner after the first child is born. Any extra sims must be moved out of the house by 24 hours after the first child is born. A male heir may move in a female partner for the course of any pregnancies, but the 24 hour rule applies and she may not contribute financially.',
+                description: 'Your heir may not have a live-in partner after the first child is born. Any extra sims must be moved out of the house by 24 hours after the first child is born. A male heir may move in a female partner for the course of any pregnancies, but the 24 hour rule applies and she may not contribute financially. Partners that have moved out are not allowed to lurk around the house to help out with toddler care, and must be removed if they will not leave.',
                 numSecondaryCareers: 0
             },
             {
@@ -516,7 +516,7 @@
                 id: 1,
                 on: true,
                 name: 'Random',
-                description: 'Determine childhood aspiration and traits randomly for all sims of this generation (the heir and their siblings). Adult aspirations should be chosen randomly from the list of aspirations, discarding any which are incompatible with other parameters, as stated earlier in the rules. Helpers and Spouses moved in should have their adult aspiration randomized similarly, if you choose to change it.'
+                description: 'Determine traits and aspirations (including the childhood aspiration) randomly for all sims of this generation (the heir and their siblings). Adult aspirations should be chosen randomly from the list of aspirations, discarding any which are incompatible with other parameters, as stated earlier in the rules. Helpers and Spouses moved in should have their adult aspiration randomized in a similar manner, if you choose to change it. Any lot traits determined this generation, including initial move-in traits, must be random.'
             },
             {
                 id: 2,
@@ -540,7 +540,7 @@
                 id: 5,
                 on: true,
                 name: 'Homemade',
-                description: 'May not get quick meals from the fridge or order pizza, and may only cook meals with ingredients if all ingredients are present.'
+                description: 'May not get quick meals from the fridge, order pizza, eat from food stalls or dine out, consume plasma packs, and may only cook meals with ingredients if all ingredients are present. The pre-made toddler meals you can serve from the high chair are considered quick meals.'
             },
             {
                 id: 6,
@@ -582,7 +582,7 @@
                 id: 12,
                 on: true,
                 name: 'Health Nut',
-                description: 'This generation, sims may only eat healthy food. Healthy food includes: orange juice (quick meal), yogurt (quick meal), garden salad (cooking 1), and wellness food. In addition, the heir, spouse, helpers, and their children must each spend at least 3 hours each week performing physical activity, such as jogging, swimming, yoga, or playing on the monkeybars.'
+                description: 'This generation, sims may only eat healthy food. Healthy food includes: orange juice (quick meal), yogurt (quick meal), garden salad (cooking 1), wellness food, plasma fruit recipes, and your neighbors. In addition, the heir, spouse, helpers, and their children must each spend at least 3 hours each week performing physical activity, such as jogging, swimming, yoga, or playing on the monkeybars.'
             },
             {
                 id: 13,
@@ -680,7 +680,7 @@
                 id: 3,
                 on: true,
                 name: 'Freelance Musician',
-                description: 'Play a musical instrument of your choice in public to earn money from tips. You may also sell jingles and license songs you\'ve written.'
+                description: 'Play a musical instrument of your choice in public to earn money from tips. You may also sell jingles and license songs you\'ve written. If you have City Living, singing counts as an instrument.'
             },
             {
                 id: 4,
@@ -698,7 +698,7 @@
                 id: 6,
                 on: true,
                 name: 'Treasure Hunter',
-                description: 'Dig up those little weird rocky-looking things and sell what you find. You may also sell the little treasures (aka, unwanted upgrade parts) that you dig out of your household plumbing, electronics and appliances. Collecting and breeding frogs is also allowed, as is collecting and selling insects (OR).'
+                description: 'Dig up those little weird rocky-looking things and sell what you find. You may also sell the little treasures (aka, unwanted upgrade parts) that you dig out of your household plumbing, electronics and appliances. Collecting and breeding frogs is also allowed, as is collecting and selling insects (OR). Selling collectibles you\'ve traded for at the flea market is allowed.'
             },
             {
                 id: 7,
