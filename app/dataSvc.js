@@ -605,7 +605,26 @@
                 on: true,
                 name: 'Town Explorer',
                 description: 'Starting when the heir is a teen, they (or a spouse or helper) must visit a unique community lot every week, for at least 3 hours. The community lots may not be repeated to count for this, though you may visit them again just for fun.'
+            },
+            {
+                id: 21,
+                on: true,
+                name: '(DO) Regular Diner',
+                description: 'Once a week, the entire household must go out to eat at a restaurant. All three courses and something to drink should be ordered.'
+            },
+            {
+                id: 22,
+                on: true,
+                name: '(CL) Festival Frequenter',
+                description: 'Every time there is a festival, at least one household member must attend the festival for at least one sim hour. This doesn\'t have to be the same household member each time.'
+            },
+            {
+                id: 23,
+                on: true,
+                name: '(CL) Flea Market Fanatic ',
+                description: 'ome sims just can\'t pass up a great bargain. Why would you pay full price for anything? This generation, you may not purchase certain categories of items from the catalog. These items may only be purchased from the flea market or from unplayable sims selling their own goods on the street. Paintings left on public easels count. The categories are: Comfort (except beds), Lighting, Decorations (except mirrors).'
             }
+            
 		],
 
 		unconventionalCareers: [
