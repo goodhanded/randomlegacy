@@ -313,6 +313,12 @@
                 on: true,
                 name: '(GT) Best Club Ever',
                 description: 'Your heir must start their own club from scratch this generation. To complete this goal, the following criteria must be met concurrently: 1) The club must have 8 members. Sims may not join the club unless they are already friends with the club leader, so get to recruiting! 2) The club must have a hangout built specially for them, either on your home lot or on a community lot. The hangout should contain enough seating for the entire club and any necessary items to complete club activities. If you build on a community lot from the map view, take note of how much money you "spent" on the hangout and subtract it from your family\'s funds. 3) The club should have all ranks of one of the emotional vibes purchased, depending on the club\'s focus. Happy counts. 4) The club door perk must be unlocked (since you have a hangout). 5) In addition, three other club spirit perks(hats, jackets, wall decorations, etc) must be unlocked and used.'
+            },
+            {
+                id: 17,
+                on: true,
+                name: '(CL) Domestic Dilemma',
+                description: 'When this generation comes of age(or at the start of the game) you must either add a new "negative" trait or replace an existing trait(determine which of the three randomly) with a "negative" trait of your choice(unless you\'ve rolled Random). This generation, you must find a creative way in your story to overcome said negative trait. For example, Quake Zone might be overcome by a sim maxing their writing skill and writing 5 nonfiction bestseller books about earthquake safety, or perhaps by a sim maxing their handiness skill and equipping every appliance/plumbing object in the house with the unbreakable upgrade. Be creative! When the negative trait has been overcome, you may replace it with a trait of your choice if you wish(again, unless you\'ve rolled Random). Negative traits include: Cursed, Filthy, Gremlins, Grody, Haunted, Mean Vibe, On a Dark Ley Line, Quake Zone, Vampire Nexus'
             }
 		],
 
