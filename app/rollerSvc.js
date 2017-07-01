@@ -238,7 +238,7 @@
 		}
 
 		function setPermalink () {
-			roll.permalink = 'http://randomlegacy.com/?roll=' + serializer.serialize();
+			roll.permalink = 'http://simsroller.com/?roll=' + serializer.serialize();
 		}
 	}
 
